@@ -1,8 +1,8 @@
-### ASCII Renderer ###
+### ASCII Renderer 
 
 A curses-based 3D renderer. It's a very original project idea that I used to hone my development skills and refresh my linear algebra knowledge. It also looks very cool. 
 
-## How it works ##
+## How it works 
 
 The scene is drawn from the perspective of a camera, and the screen is a plane located some distance "in front" of the camera. Each triangle is then radially projected onto the screen, provided it's on the right side of the screen, and the screen is updated. 
 
@@ -10,7 +10,7 @@ Currently, the renderer only draws triangles, which are supplied to the renderer
 
 There is currently a bit of head-scratching to do with the coordinate system. On one hand, data are stored and computations are performed using an arbitrarily set absolute coordinate system for the entire space. However, the screen itself has its own local coordinate system, with the additional pain of being only two-dimensional. This coordinate system is also arbitrary, and this makes it hard to reconcile the scale, location, and orientation of each triangle being drawn. Suggestions (read: assistance) are very welcome. 
 
-## Next steps ##
+## Next steps 
 
 Currently, the project is missing a lot of functions that I would like to add at one point or another, including (but of course not limited to): 
 
